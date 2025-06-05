@@ -6,7 +6,7 @@ import { vue3dLoader } from "vue-3d-loader"
 <template>
 <vue3dLoader
   :height="460"
-  :filePath="['/calo_shower_back_only.glb']"
+  :filePath="['/Skoltech_talk_2025/calo_shower_back_only.glb']"
   :backgroundColor="0xffffff"
   :enableDamping="true"
   :dampingFactor="0.05"
