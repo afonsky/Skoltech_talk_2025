@@ -8,57 +8,16 @@ layout: statement
 
 # Selected Models: Energy Reconstruction
 
-<div class="grid grid-cols-[2fr_3fr] gap-10">
-<div>
 <br>
-<figure>
-    <img src="/energy_models.png" style="width: 355px !important;">
-</figure>
 <br>
-
-```markdown {*}{maxHeight:'300px'}
-================================================
-Layer              Output Shape      	Param #
-================================================
-Model 1 (Energy)  [-1]               	--
-|--Conv2d         [-1, 32, 13, 13]   	288
-|--ReLU           [-1, 32, 13, 13]   	--
-|--MaxPool2d      [-1, 32, 6, 6]     	--
-|--Conv2d         [-1, 64, 4, 4]     	18,432
-|--ReLU           [-1, 64, 4, 4]     	--
-|--MaxPool2d      [-1, 64, 3, 3]     	--
-|--Linear         [-1, 9]           	5,193
-|--ReLU           [-1, 9]           	--
-|--Linear         [-1, 1]            	10
-================================================
-Trainable params: 23,923
-================================================
-
-================================================
-Layer              Output Shape      	Param #
-================================================
-Model 2 (Energy)  [-1]               	--
-|--Conv2d         [-1, 32, 13, 13]   	288
-|--ReLU           [-1, 32, 13, 13]   	--
-|--MaxPool2d      [-1, 32, 6, 6]     	--
-|--Conv2d         [-1, 64, 4, 4]     	18,432
-|--ReLU           [-1, 64, 4, 4]     	--
-|--MaxPool2d      [-1, 64, 3, 3]     	--
-|--Linear         [-1, 9]           	5,202
-|--ReLU           [-1, 9]           	--
-|--Linear         [-1, 1]            	10
-================================================
-Trainable params: 23,932
-================================================
-```
-</div>
+<br>
+<br>
+<div class="grid grid-cols-[4fr_2fr_2fr] gap-1">
 <div>
-
 <figure>
     <img src="/Energy_B_Loss_vs_epoch_Models_1_2.svg" style="width: 500px !important;">
 </figure>
-
-<div class="grid grid-cols-[2fr_2fr] gap-1">
+</div>
 <div>
 <figure>
     <img src="/Energy_A_4_bins_corrected.svg" style="width: 235px !important;">
@@ -70,9 +29,9 @@ Trainable params: 23,932
 </figure>
 </div>
 </div>
-
-</div>
-</div>
+<br>
+<br>
+<Link to="40">See extra details in backup slide.</Link>
 
 ---
 
@@ -108,67 +67,22 @@ Trainable params: 23,932
 </figure>
 </center>
 
----
-zoom: 0.99
+
 ---
 
 # Selected Models: Position Reconstruction
 
-<div class="grid grid-cols-[2fr_3fr] gap-10">
-<div>
+
 <br>
-<figure>
-    <img src="/position_models.png" style="width: 355px !important;">
-</figure>
 <br>
-
-```markdown {*}{maxHeight:'300px'}
-================================================
-Layer              Output Shape      	Param #
-================================================
-Model 3 (Position)  [-1]               	--
-|--Conv2d           [-1, 32, 13, 13]   	288
-|--PReLU            [-1, 32, 13, 13]   	32
-|--MaxPool2d        [-1, 32, 6, 6]     	--
-|--Conv2d           [-1, 64, 4, 4]     	18,432
-|--PReLU            [-1, 64, 4, 4]     	64
-|--MaxPool2d        [-1, 64, 1, 1]     	--
-|--Linear           [-1, 64]           	4,160
-|--PReLU            [-1, 64]           	64
-|--Linear           [-1, 9]            	585
-|--PReLU            [-1, 9]            	9
-|--Linear           [-1, 1]            	10
-================================================
-Trainable params: 23,644
-================================================
-
-================================================
-Layer              Output Shape      	Param #
-================================================
-Model 4 (Position)  [-1]               	--
-|--Conv2d           [-1, 32, 13, 13]   	288
-|--PReLU            [-1, 32, 13, 13]   	32
-|--MaxPool2d        [-1, 32, 6, 6]     	--
-|--Conv2d           [-1, 64, 4, 4]     	18,432
-|--PReLU            [-1, 64, 4, 4]     	64
-|--MaxPool2d        [-1, 64, 1, 1]     	--
-|--Linear           [-1, 64]           	4,160
-|--PReLU            [-1, 64]           	64
-|--Linear           [-1, 9]            	603
-|--PReLU            [-1, 9]            	9
-|--Linear           [-1, 1]            	10
-================================================
-Trainable params: 23,662
-================================================
-```
-</div>
+<br>
+<br>
+<div class="grid grid-cols-[4fr_2fr_2fr] gap-1">
 <div>
-
 <figure>
     <img src="/Position_B_Loss_vs_epoch_Models_3_4.svg" style="width: 500px !important;">
 </figure>
-
-<div class="grid grid-cols-[2fr_2fr] gap-1">
+</div>
 <div>
 <figure>
     <img src="/Position_A_4_bins.svg" style="width: 235px !important;">
@@ -180,9 +94,9 @@ Trainable params: 23,662
 </figure>
 </div>
 </div>
-
-</div>
-</div>
+<br>
+<br>
+<Link to="41">See extra details in backup slide.</Link>
 
 ---
 

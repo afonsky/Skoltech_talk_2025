@@ -38,7 +38,7 @@ The space of solutions is still huge, so we conducted some preliminary experimen
 zoom: 1.2
 ---
 
-# Baseline solutions
+# Baseline Solutions
 <br>
 <div class="grid grid-cols-[4fr_3fr] gap-10">
   <div>
@@ -82,7 +82,7 @@ zoom: 1.2
 zoom: 0.95
 ---
 
-# Preliminary experiments
+# Preliminary Experiments
 
 <div class="grid grid-cols-[2fr_2fr] gap-20">
 <div v-click at="1">
